@@ -1,0 +1,30 @@
+{
+  "name": "retos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node index",
+    "build": "NODE_ENV=production cd public/assets && cleancss -o main.min.css main.css",
+    "dev": "NODE_ENV=development nodemon server",
+    "test": "mocha --exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "boom": "^7.3.0",
+    "celebrate": "^15.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.1.5",
+    "mogoose": "^0.0.1-security",
+    "mongoose": "^7.1.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.2.4",
+    "mysql2-promise": "^0.1.4",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7"
+  }
+}
